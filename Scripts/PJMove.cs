@@ -34,5 +34,9 @@ public class PJMove : MonoBehaviour {
             Destroy(other.gameObject);
             moedas++;
         }
+
+        if (other.gameObject.CompareTag("Portal")) {
+           Time.timeScale = 0f;
+        }
     }
 }
